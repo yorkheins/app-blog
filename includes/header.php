@@ -6,13 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css"> 
-    <title>Blog de videojuegos</title>
+    <link rel = "icon" href= "./assets/img/game.ico">
+    <title>Blog de Videojuegos</title>
 </head>
 <body>
     <header id="cabecera">
         <div id="logo">
             <a href="index.php">
-            Blog de videojuegos
+            Blog de Videojuegos
             </a>
         </div>
         <nav id="menu">

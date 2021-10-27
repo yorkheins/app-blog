@@ -1,6 +1,7 @@
 <?php
 // recoger valores del formulario de registro
-if (isset($_POST['submit'])){
+session_start();
+if (isset($_POST['POST'])){
     $nombre = isset ($_POST['nombre']) ? $_POST['nombre'] : false;
     $apellidos = isset($_POST['apellidos']) ? $_POST['apellidos'] : false;
     $email = isset($_POST['email']) ? $_POST['email'] : false;
@@ -31,6 +32,13 @@ if (isset($_POST['submit'])){
     }else{
         $validate_password = false;
         $errores['password'] = "La password no puede ser vacía";
+    }
+    $save_user = false;
+    if(count($errores) == 0){
+        $save_user = true;
+    }else{
+        $_SESSION['errores'] = $errores;
+        header("Location:index.php");
     }
 
 }
