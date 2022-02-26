@@ -26,11 +26,6 @@
             if (month < 10)
                 month = '0' + month
             document.getElementById('enter').innerHTML = "Ultimas Entradas&nbsp;" + day + "-" + month + "-" + year;
-        }
-        window.onload = function() {
-            var fecha = new Date();
-            var year = fecha.getFullYear();
             document.getElementById('fo').innerHTML = "by Jorg Viloria&nbsp;" + "&copy;&nbsp;" + year;
-
-        }
+        } 
     </script>
